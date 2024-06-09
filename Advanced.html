@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Advanced Piano Courses</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-music"></i> Piano with Arnur</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="beginner.html">Beginners</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="intermediate.html">Intermediate</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="advanced.html">Advanced <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="teachers.html">Teachers</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="logo.png" alt="Logo" style="height: 60px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 data-lang="title">Advanced Piano Courses</h1>
+        <p data-lang="description">Our advanced piano courses are designed for students who have a strong foundation in piano playing and wish to master their skills. These courses will help you achieve a high level of proficiency and performance.</p>
+        
+        <!-- Кнопки для смены языка -->
+        <div class="mt-4">
+            <button class="btn btn-primary my-2" onclick="changeLanguage('en')">English</button>
+            <button class="btn btn-secondary my-2" onclick="changeLanguage('ru')">Русский</button>
+        </div>
+        
+        <!-- Видеоурок -->
+        <h1 data-lang="example">Our Student</h1>
+        <div class="embed-responsive embed-responsive-16by9 my-4">
+            <video autoplay controls src="vid3.mp4"></video>
+        </div>
+        
+        <!-- Форма регистрации -->
+        <h2 data-lang="register-title">Register for Advanced Piano Courses</h2>
+        <form>
+            <div class="form-group">
+                <label for="name" data-lang="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email" data-lang="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="phone" data-lang="phone">Phone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+            </div>
+            
+            <!-- Новый раздел для выбора уровня -->
+            <div class="form-group">
+                <label for="level" data-lang="level">Select Level</label>
+                <select class="form-control" id="level">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+
+            <!-- Новый раздел для выбора преподавателя -->
+            <div class="form-group">
+                <label for="teacher" data-lang="teacher">Select Teacher</label>
+                <select class="form-control" id="teacher">
+                    <option value="john_doe">John Doe</option>
+                    <option value="jane_smith">Jane Smith</option>
+                    <option value="arnur">Arnur</option>
+                </select>
+            </div>
+
+            <!-- Новый раздел для выбора формата уроков -->
+            <div class="form-group">
+                <label for="format" data-lang="format">Lesson Format</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="format" id="online" value="online">
+                    <label class="form-check-label" for="online">Online</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="format" id="offline" value="offline">
+                    <label class="form-check-label" for="offline">Offline</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="message" data-lang="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-lang="register">Register</button>
+        </form>
+    </div>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">All rights reserved © 2024 | Contact: pianowitharnur@gmail.com | Phone: 87778158421</span>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Piano School</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-music"></i> Piano with Arnur</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="beginner.html">Beginners </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="intermediate.html">Intermediate <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Advanced.html">Advanced</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="teachers.html">Teachers</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="logo.png" alt="Logo" style="height: 60px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 data-lang="title"> Intermediate Piano Courses</h1>
+        <p data-lang="description">Our intermediate piano courses are designed for students who have a basic understanding of piano playing and wish to improve their skills. These courses will help you refine your technique and expand your repertoire.</p>
+                <!-- Кнопки для смены языка -->
+        <div class="mt-4">
+            <button class="btn btn-primary my-2" onclick="changeLanguage('en')">English</button>
+            <button class="btn btn-secondary my-2" onclick="changeLanguage('ru')">Русский</button>
+        </div>
+        <!-- Видеоурок -->
+  
+        <h1 data-lang="example">Our Student</h1>   
+        <div class="embed-responsive embed-responsive-16by9 my-4">
+            <video autoplay controls src="vid.mp4"></video>
+        </div>
+        
+        <!-- Форма регистрации -->
+        <h2 data-lang="register-title">Register for Intermediate Piano Courses</h2>
+        <form>
+            <div class="form-group">
+                <label for="name" data-lang="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email" data-lang="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="phone" data-lang="phone">Phone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label for="message" data-lang="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-lang="register">Register</button>
+        </form>
+        
+
+    </div>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">All rights reserved © 2024 | Contact: pianowitharnur@gmail.com | Phone: 87778158421</span>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lan2.js"></script>
+</body>
+</html>

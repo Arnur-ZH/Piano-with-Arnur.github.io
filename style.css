@@ -1,0 +1,114 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #243447;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили навигационной панели */
+.navbar {
+    background-color: #243447;
+    color: #ffffff;
+}
+
+.nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #c7a17a;
+    transform: translateY(-2px);
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    color: #243447;
+}
+
+/* Кнопки */
+.button, button {
+    background-color: #c7a17a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover, button:hover {
+    background-color: #b8966f;
+    transform: scale(1.05);
+}
+
+/* Футер */
+.footer {
+    background-color: #243447;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Карусель */
+.carousel-item {
+    text-align: center;
+    color: #ffffff;
+}
+
+.carousel-caption {
+    background-color: rgba(128, 128, 0, 0.5); /* Измените этот цвет по своему усмотрению */
+    border-radius: 10px;
+    padding: 10px;
+    animation: fadeIn 2s ease-in-out;
+    color: #ffffff; /* Цвет текста */
+}
+
+/* Анимация для карточек при наведении */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Анимация при загрузке страницы */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Анимация для карусели */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Остальные элементы */
+p, a {
+    color: #243447;
+}
+
+a:hover {
+    color: #c7a17a;
+}
